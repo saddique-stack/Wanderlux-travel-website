@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world with WanderLux Travels - Your premium travel agency offering curated tours, exotic destinations, and unforgettable experiences worldwide.">
+    <meta name="keywords" content="travel agency, luxury travel, tours, destinations, vacation packages, WanderLux">
+    <meta name="author" content="WanderLux Travels">
+    <meta name="robots" content="index, follow">
+    <title>WanderLux Travels | Premium Travel Agency</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loaderWrapper">
+        <div class="loader">
+            <div class="loader-plane">
+                <i class="bi bi-airplane-fill"></i>
+            </div>
+            <div class="loader-text">WanderLux</div>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-airplane-fill"></i> Wander<span>Lux</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="tours.html" class="btn btn-primary ms-lg-3 btn-nav-book">Book Now</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&h=1080&fit=crop');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="carousel-caption">
+                <span class="hero-badge" data-aos="fade-down" data-aos-duration="800">Premium Travel Experience</span>
+                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Discover Paradise<br>On Earth</h1>
+                <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Uncover breathtaking destinations with handcrafted journeys designed for the modern explorer.</p>
+                <div class="hero-btns" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <a href="tours.html" class="btn btn-primary btn-lg">Explore Tours</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&h=1080&fit=crop');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="carousel-caption">
+                <span class="hero-badge" data-aos="fade-down" data-aos-duration="800">Curated Adventures</span>
+                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Journey Beyond<br>the Ordinary</h1>
+                <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Experience the extraordinary with our exclusive collection of worldwide tours and escapes.</p>
+                <div class="hero-btns" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <a href="tours.html" class="btn btn-primary btn-lg">Explore Tours</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1920&h=1080&fit=crop');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="carousel-caption">
+                <span class="hero-badge" data-aos="fade-down" data-aos-duration="800">Luxury Escapes</span>
+                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Your Dream<br>Vacation Awaits</h1>
+                <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Indulge in world-class hospitality and breathtaking scenery on every journey with WanderLux.</p>
+                <div class="hero-btns" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <a href="tours.html" class="btn btn-primary btn-lg">Explore Tours</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Search Tour Section -->
+<section class="search-section" data-aos="fade-up" data-aos-duration="800">
+    <div class="container">
+        <div class="search-card glass-card">
+            <div class="row g-3 align-items-end">
+                <div class="col-lg-3 col-md-6">
+                    <label class="search-label">Destination</label>
+                    <select class="form-select">
+                        <option selected>All Destinations</option>
+                        <option>Bali, Indonesia</option>
+                        <option>Santorini, Greece</option>
+                        <option>Maldives</option>
+                        <option>Swiss Alps</option>
+                        <option>Tokyo, Japan</option>
+                        <option>Dubai, UAE</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <label class="search-label">Travel Date</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <label class="search-label">Guests</label>
+                    <select class="form-select">
+                        <option selected>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5+ Guests</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <button class="btn btn-primary w-100 search-btn">
+                        <i class="bi bi-search"></i> Search Tours
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Destinations -->
+<section class="section-padding destinations-section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-badge">Top Picks</span>
+            <h2 class="section-title">Popular Destinations</h2>
+            <p class="section-subtitle">Explore our most sought-after destinations curated for unforgettable experiences.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali" loading="lazy">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Bali</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                        </div>
+                        <p class="card-country">Indonesia</p>
+                        <p class="card-desc">Tropical paradise with rich culture and stunning beaches.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=400&fit=crop" alt="Santorini" loading="lazy">
+                        <span class="card-badge">Trending</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Santorini</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                        </div>
+                        <p class="card-country">Greece</p>
+                        <p class="card-desc">Iconic white-washed buildings with breathtaking sunsets.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Maldives" loading="lazy">
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Maldives</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                        </div>
+                        <p class="card-country">Maldives</p>
+                        <p class="card-desc">Crystal-clear waters and luxurious overwater villas.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&h=400&fit=crop" alt="Swiss Alps" loading="lazy">
+                        <span class="card-badge">New</span>
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Swiss Alps</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                        </div>
+                        <p class="card-country">Switzerland</p>
+                        <p class="card-desc">Majestic mountains and charming alpine villages.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=400&fit=crop" alt="Tokyo" loading="lazy">
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Tokyo</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                        </div>
+                        <p class="card-country">Japan</p>
+                        <p class="card-desc">Futuristic city blending tradition with cutting-edge innovation.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" alt="Dubai" loading="lazy">
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Dubai</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                        </div>
+                        <p class="card-country">UAE</p>
+                        <p class="card-desc">Ultra-modern city with luxurious shopping and architecture.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="Paris" loading="lazy">
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Paris</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                        </div>
+                        <p class="card-country">France</p>
+                        <p class="card-desc">City of love with iconic landmarks and world-class cuisine.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="destination-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="Bora Bora" loading="lazy">
+                    </div>
+                    <div class="card-body-content">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Bora Bora</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                        </div>
+                        <p class="card-country">French Polynesia</p>
+                        <p class="card-desc">Turquoise lagoons and ultimate tropical seclusion.</p>
+                        <a href="destinations.html" class="btn btn-sm btn-outline-primary">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="destinations.html" class="btn btn-primary btn-lg">View All Destinations <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section-padding why-us-section bg-light-subtle">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-badge">Why WanderLux</span>
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">We deliver exceptional travel experiences with unmatched service quality.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-card glass-card text-center">
+                    <div class="why-icon"><i class="bi bi-cash-stack"></i></div>
+                    <h5>Best Prices</h5>
+                    <p>Guaranteed competitive pricing with no hidden fees. We price-match for your peace of mind.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="why-card glass-card text-center">
+                    <div class="why-icon"><i class="bi bi-shield-check"></i></div>
+                    <h5>Safe Travel</h5>
+                    <p>Your safety is our priority with vetted partners, 24/7 emergency support, and comprehensive insurance.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="why-card glass-card text-center">
+                    <div class="why-icon"><i class="bi bi-compass"></i></div>
+                    <h5>Expert Guides</h5>
+                    <p>Knowledgeable local guides who bring each destination to life with insider stories and hidden gems.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="why-card glass-card text-center">
+                    <div class="why-icon"><i class="bi bi-headset"></i></div>
+                    <h5>24/7 Support</h5>
+                    <p>Round-the-clock assistance wherever you are. We're just a call away, any time, any day.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Tour Packages -->
+<section class="section-padding tours-section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-badge">Featured Packages</span>
+            <h2 class="section-title">Featured Tour Packages</h2>
+            <p class="section-subtitle">Handpicked tours designed to create memories that last a lifetime.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="tour-card">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali Explorer" loading="lazy">
+                        <span class="tour-duration">7 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Bali Explorer</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                        </div>
+                        <p class="tour-price">$1,299 <span>/ person</span></p>
+                        <p class="tour-desc">Immerse in Balinese culture with temple visits, rice terraces, and pristine beaches.</p>
+                        <div class="d-flex gap-2">
+                            <a href="tours.html" class="btn btn-outline-primary btn-sm flex-grow-1">Details</a>
+                            <a href="contact.html" class="btn btn-primary btn-sm flex-grow-1">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="tour-card">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=400&fit=crop" alt="Greek Island Hopping" loading="lazy">
+                        <span class="tour-duration">10 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Greek Island Hopping</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                        </div>
+                        <p class="tour-price">$2,499 <span>/ person</span></p>
+                        <p class="tour-desc">Sail through the Aegean visiting Santorini, Mykonos, and hidden island treasures.</p>
+                        <div class="d-flex gap-2">
+                            <a href="tours.html" class="btn btn-outline-primary btn-sm flex-grow-1">Details</a>
+                            <a href="contact.html" class="btn btn-primary btn-sm flex-grow-1">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="tour-card">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Maldives Luxury" loading="lazy">
+                        <span class="tour-duration">5 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Maldives Luxury</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                        </div>
+                        <p class="tour-price">$3,899 <span>/ person</span></p>
+                        <p class="tour-desc">Overwater villa stay with private pool, spa treatments, and sunset cruises.</p>
+                        <div class="d-flex gap-2">
+                            <a href="tours.html" class="btn btn-outline-primary btn-sm flex-grow-1">Details</a>
+                            <a href="contact.html" class="btn btn-primary btn-sm flex-grow-1">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="tour-card">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&h=400&fit=crop" alt="Alpine Adventure" loading="lazy">
+                        <span class="tour-duration">8 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Alpine Adventure</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                        </div>
+                        <p class="tour-price">$2,199 <span>/ person</span></p>
+                        <p class="tour-desc">Hike through the Swiss Alps with scenic train rides and charming mountain lodges.</p>
+                        <div class="d-flex gap-2">
+                            <a href="tours.html" class="btn btn-outline-primary btn-sm flex-grow-1">Details</a>
+                            <a href="contact.html" class="btn btn-primary btn-sm flex-grow-1">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="tour-card">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=400&fit=crop" alt="Tokyo Discovery" loading="lazy">
+                        <span class="tour-duration">6 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Tokyo Discovery</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                        </div>
+                        <p class="tour-price">$1,899 <span>/ person</span></p>
+                        <p class="tour-desc">Explore vibrant Tokyo with sushi workshops, temples, and neon-lit adventures.</p>
+                        <div class="d-flex gap-2">
+                            <a href="tours.html" class="btn btn-outline-primary btn-sm flex-grow-1">Details</a>
+                            <a href="contact.html" class="btn btn-primary btn-sm flex-grow-1">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="tour-card">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" alt="Dubai Extravaganza" loading="lazy">
+                        <span class="tour-duration">5 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Dubai Extravaganza</h5>
+                            <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                        </div>
+                        <p class="tour-price">$2,799 <span>/ person</span></p>
+                        <p class="tour-desc">Luxury desert safari, Burj Khalifa views, and world-class shopping experiences.</p>
+                        <div class="d-flex gap-2">
+                            <a href="tours.html" class="btn btn-outline-primary btn-sm flex-grow-1">Details</a>
+                            <a href="contact.html" class="btn btn-primary btn-sm flex-grow-1">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="tours.html" class="btn btn-primary btn-lg">View All Packages <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Travel Statistics -->
+<section class="stats-section section-padding">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-lg-3 col-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-emoji-smile"></i></div>
+                    <div class="stat-number counter" data-target="24500">0</div>
+                    <p>Happy Travelers</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-flag"></i></div>
+                    <div class="stat-number counter" data-target="1280">0</div>
+                    <p>Tours Completed</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-geo-alt"></i></div>
+                    <div class="stat-number counter" data-target="85">0</div>
+                    <p>Destinations</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-trophy"></i></div>
+                    <div class="stat-number counter" data-target="36">0</div>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section-padding testimonials-section bg-light-subtle">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-badge">Testimonials</span>
+            <h2 class="section-title">What Our Travelers Say</h2>
+            <p class="section-subtitle">Real stories from real adventurers who traveled with WanderLux.</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-aos="fade-up">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card glass-card text-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah M." class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"WanderLux planned the most incredible honeymoon in Bali. Every detail was perfect, from the private villa to the guided temple tours. Truly a five-star experience!"</p>
+                        <h6>Sarah M.</h6>
+                        <span>Honeymoon Traveler</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card glass-card text-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="James K." class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"The Alpine Adventure tour was breathtaking. Our guide knew every hidden trail and the accommodations were top-notch. Already booking my next trip with them!"</p>
+                        <h6>James K.</h6>
+                        <span>Adventure Enthusiast</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card glass-card text-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Emily R." class="testimonial-avatar" loading="lazy">
+                        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testimonial-text">"From the moment I contacted WanderLux, the service was impeccable. The Maldives trip exceeded every expectation. Pure luxury from start to finish."</p>
+                        <h6>Emily R.</h6>
+                        <span>Luxury Traveler</span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Preview -->
+<section class="section-padding blog-preview-section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-badge">Our Blog</span>
+            <h2 class="section-title">Travel Stories & Tips</h2>
+            <p class="section-subtitle">Get inspired with travel guides, tips, and stories from around the globe.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-card">
+                    <div class="blog-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="Top Beaches" loading="lazy">
+                        <span class="blog-category">Beaches</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="bi bi-calendar"></i> May 20, 2026</span>
+                        <h5>Top 10 Beaches to Visit This Summer</h5>
+                        <p>Discover pristine shores and turquoise waters in our curated beach guide.</p>
+                        <a href="blog.html" class="btn btn-sm btn-link">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="blog-card">
+                    <div class="blog-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&h=400&fit=crop" alt="Solo Travel" loading="lazy">
+                        <span class="blog-category">Tips</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="bi bi-calendar"></i> May 15, 2026</span>
+                        <h5>Solo Travel: A Complete Guide for Beginners</h5>
+                        <p>Everything you need to know for a safe and rewarding solo adventure.</p>
+                        <a href="blog.html" class="btn btn-sm btn-link">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="blog-card">
+                    <div class="blog-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=400&fit=crop" alt="Tokyo Food" loading="lazy">
+                        <span class="blog-category">Food</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-date"><i class="bi bi-calendar"></i> May 10, 2026</span>
+                        <h5>A Food Lover's Guide to Tokyo</h5>
+                        <p>From street food to Michelin stars, Tokyo is a culinary paradise.</p>
+                        <a href="blog.html" class="btn btn-sm btn-link">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-section section-padding">
+    <div class="container">
+        <div class="newsletter-card glass-card text-center" data-aos="zoom-in">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get exclusive travel deals, tips, and inspiration delivered straight to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email address" required id="newsletterEmail">
+                    <button class="btn btn-primary" type="submit">Subscribe <i class="bi bi-send"></i></button>
+                </div>
+                <small class="newsletter-note">We respect your privacy. Unsubscribe anytime.</small>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand">
+                    <i class="bi bi-airplane-fill"></i> Wander<span>Lux</span>
+                </div>
+                <p class="footer-about">Your trusted partner for luxury travel experiences worldwide. We craft unforgettable journeys with passion and precision.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6>Contact Info</h6>
+                <ul class="footer-contact">
+                    <li><i class="bi bi-geo-alt"></i> 123 Travel Street, Suite 100<br>New York, NY 10001, USA</li>
+                    <li><i class="bi bi-telephone"></i> +1 (555) 123-4567</li>
+                    <li><i class="bi bi-envelope"></i> info@wanderlux.com</li>
+                    <li><i class="bi bi-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6>Download App</h6>
+                <p class="footer-app-text">Get our mobile app for exclusive deals and easy booking on the go.</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn"><i class="bi bi-google-play"></i> Google Play</a>
+                    <a href="#" class="app-btn"><i class="bi bi-apple"></i> App Store</a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="footer-copy">&copy; 2026 WanderLux Travels. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="footer-copy">
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

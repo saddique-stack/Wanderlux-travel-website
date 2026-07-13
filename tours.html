@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our curated tour packages with detailed itineraries, pricing, and booking options. Find your perfect adventure with WanderLux Travels.">
+    <meta name="keywords" content="tour packages, travel tours, vacation packages, book tours, WanderLux tours">
+    <meta name="robots" content="index, follow">
+    <title>Tour Packages | WanderLux Travels</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="loader-wrapper" id="loaderWrapper">
+        <div class="loader"><div class="loader-plane"><i class="bi bi-airplane-fill"></i></div><div class="loader-text">WanderLux</div></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-airplane-fill"></i> Wander<span>Lux</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link active" href="tours.html">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="tours.html" class="btn btn-primary ms-lg-3 btn-nav-book">Book Now</a>
+        </div>
+    </div>
+</nav>
+
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1920&h=600&fit=crop');">
+    <div class="hero-overlay"></div>
+    <div class="container page-hero-content">
+        <span class="hero-badge" data-aos="fade-down">Book Now</span>
+        <h1 data-aos="fade-up" data-aos-delay="200">Tour Packages</h1>
+        <p data-aos="fade-up" data-aos-delay="400">Handcrafted itineraries for the ultimate travel experience.</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <!-- Controls -->
+        <div class="destination-controls" data-aos="fade-up">
+            <div class="row g-3 align-items-end">
+                <div class="col-lg-4 col-md-6">
+                    <label class="search-label">Category</label>
+                    <select class="form-select" id="tourCategory">
+                        <option value="all">All Categories</option>
+                        <option value="beach">Beach Getaways</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <label class="search-label">Sort By</label>
+                    <select class="form-select" id="tourSort">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="duration">Duration</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <button class="btn btn-primary w-100" id="tourFilterBtn"><i class="bi bi-funnel"></i> Apply</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tours Grid -->
+        <div class="row g-4 mt-4" id="toursGrid">
+            <div class="col-lg-4 col-md-6 tour-item" data-category="beach" data-price="1299" data-duration="7">
+                <div class="tour-card" data-aos="fade-up">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali Explorer" loading="lazy">
+                        <span class="tour-duration">7 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Bali Explorer</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.9</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 2-8 people</p>
+                        <p class="tour-price">$1,299 <span>/ person</span></p>
+                        <p class="tour-desc">Temple visits, rice terraces, and pristine beaches with expert local guides.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="beach" data-price="2499" data-duration="10">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=400&fit=crop" alt="Greek Island Hopping" loading="lazy">
+                        <span class="tour-duration">10 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Greek Island Hopping</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.8</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 4-12 people</p>
+                        <p class="tour-price">$2,499 <span>/ person</span></p>
+                        <p class="tour-desc">Sail the Aegean visiting Santorini, Mykonos, and hidden island gems.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="luxury" data-price="3899" data-duration="5">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Maldives Luxury" loading="lazy">
+                        <span class="tour-duration">5 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Maldives Luxury</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.9</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 2-4 people</p>
+                        <p class="tour-price">$3,899 <span>/ person</span></p>
+                        <p class="tour-desc">Overwater villa, private pool, spa treatments, and sunset cruises.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="adventure" data-price="2199" data-duration="8">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&h=400&fit=crop" alt="Alpine Adventure" loading="lazy">
+                        <span class="tour-duration">8 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Alpine Adventure</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.7</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 4-10 people</p>
+                        <p class="tour-price">$2,199 <span>/ person</span></p>
+                        <p class="tour-desc">Hike the Swiss Alps with scenic train rides and mountain lodges.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="cultural" data-price="1899" data-duration="6">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=400&fit=crop" alt="Tokyo Discovery" loading="lazy">
+                        <span class="tour-duration">6 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Tokyo Discovery</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.8</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 2-8 people</p>
+                        <p class="tour-price">$1,899 <span>/ person</span></p>
+                        <p class="tour-desc">Sushi workshops, ancient temples, and neon-lit urban adventures.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="luxury" data-price="2799" data-duration="5">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop" alt="Dubai Extravaganza" loading="lazy">
+                        <span class="tour-duration">5 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Dubai Extravaganza</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.7</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 2-6 people</p>
+                        <p class="tour-price">$2,799 <span>/ person</span></p>
+                        <p class="tour-desc">Desert safari, Burj Khalifa, and world-class shopping.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="cultural" data-price="1299" data-duration="6">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="Paris Romance" loading="lazy">
+                        <span class="tour-duration">6 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Paris Romance</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.8</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 2-6 people</p>
+                        <p class="tour-price">$1,299 <span>/ person</span></p>
+                        <p class="tour-desc">Eiffel Tower, Louvre, Seine cruises, and gourmet dining experiences.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="adventure" data-price="3499" data-duration="12">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="Bora Bora Escape" loading="lazy">
+                        <span class="tour-duration">12 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Bora Bora Escape</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.9</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 2-4 people</p>
+                        <p class="tour-price">$3,499 <span>/ person</span></p>
+                        <p class="tour-desc">Ultimate Polynesian paradise with snorkeling and lagoon tours.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 tour-item" data-category="adventure" data-price="1899" data-duration="9">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tour-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1528072164453-f4e8ef0d475a?w=600&h=400&fit=crop" alt="Sydney Adventure" loading="lazy">
+                        <span class="tour-duration">9 Days</span>
+                    </div>
+                    <div class="tour-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2"><h5>Sydney Adventure</h5><span class="rating"><i class="bi bi-star-fill"></i> 4.7</span></div>
+                        <p class="tour-meta"><i class="bi bi-people"></i> 4-12 people</p>
+                        <p class="tour-price">$1,899 <span>/ person</span></p>
+                        <p class="tour-desc">Harbour cruises, Blue Mountains hiking, and iconic beaches.</p>
+                        <a href="contact.html" class="btn btn-primary btn-sm w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand"><i class="bi bi-airplane-fill"></i> Wander<span>Lux</span></div>
+                <p class="footer-about">Your trusted partner for luxury travel experiences worldwide.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-youtube"></i></a><a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="tours.html">Tours</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6>Contact Info</h6>
+                <ul class="footer-contact">
+                    <li><i class="bi bi-geo-alt"></i> 123 Travel Street, New York, USA</li>
+                    <li><i class="bi bi-telephone"></i> +1 (555) 123-4567</li>
+                    <li><i class="bi bi-envelope"></i> info@wanderlux.com</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6>Download App</h6>
+                <p class="footer-app-text">Get our mobile app for exclusive deals.</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn"><i class="bi bi-google-play"></i> Google Play</a>
+                    <a href="#" class="app-btn"><i class="bi bi-apple"></i> App Store</a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="row"><div class="col-md-6"><p class="footer-copy">&copy; 2026 WanderLux Travels. All rights reserved.</p></div><div class="col-md-6 text-md-end"><p class="footer-copy"><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p></div></div>
+    </div>
+</footer>
+
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
