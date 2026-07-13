@@ -148,7 +148,7 @@ Portfolio:
 https://saddique-portfolio.vercel.app/
 
 LinkedIn:
-(Add Your LinkedIn)
+(www.linkedin.com/in/muhammad-saddique-6a2009333)
 
 ---
 
