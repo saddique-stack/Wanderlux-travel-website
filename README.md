@@ -1,4 +1,4 @@
-#  WanderLux – Travel Agency Website
+<img width="1200" height="3195" alt="travel-website-portfolio-resized" src="https://github.com/user-attachments/assets/622a4738-89fb-431d-96ea-2d2ec04e2a9e" />#  WanderLux – Travel Agency Website
 
 A modern, responsive, and visually appealing Travel Agency website built using **HTML, CSS, Bootstrap, and JavaScript**. This project focuses on delivering a clean UI, smooth user experience, and a fully responsive layout suitable for all screen sizes.
 
@@ -8,7 +8,7 @@ A modern, responsive, and visually appealing Travel Agency website built using *
 
 > Add your project screenshot here
 
-![WanderLux Preview](images/project-preview.png)
+![WanderLux Preview](images/project-preview.pn)
 
 ---
 
@@ -73,7 +73,7 @@ wanderlux-travel-agency-website/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/travel-agency-website.git
+ https://github.com/saddique-stack/Wanderlux-travel-website/edit/main/README.md
 ```
 
 Open the project
